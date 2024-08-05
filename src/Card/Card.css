@@ -1,0 +1,64 @@
+.cardContainer {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  height: 5%;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-left: 2px;
+  height: 100%;
+  width: 30px;
+  position: absolute;
+}
+
+.icon img {
+  border-radius: 3px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.text {
+  text-decoration: none;
+  color: aliceblue;
+  opacity: 0%;
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+  height: 100%;
+  width: 100%;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.13, 0.56, 0.29, 0.87);
+}
+
+#hmm {
+  color: aliceblue;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#hmm:hover {
+  color: rgba(240, 248, 255, 0.406);
+}
+
+#herf {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition-duration: 0.3s;
+}
+
+#herf:hover {
+  color: rgba(240, 248, 255, 0.406);
+}

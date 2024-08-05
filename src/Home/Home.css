@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.home {
+  height: 100vh;
+  width: 100vh;
+  overflow: hidden;
+}
+.introcard {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+@media (max-width: 1080px) {
+  .cat {
+    display: none;
+  }
+  .infocontainer {
+    margin-left: 0px;
+  }
+}

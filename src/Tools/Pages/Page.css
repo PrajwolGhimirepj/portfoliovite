@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.align {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  margin-left: 40px;
+  margin-right: 20px;
+  animation-name: slideup;
+  animation-duration: 1s;
+  transform: translateY(140px);
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.08, 0.74, 0.32, 0.95);
+  transition-duration: 1s;
+}
+
+.align:hover video {
+  height: 100%;
+  width: 100%;
+  box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.26);
+}
+@keyframes slideup {
+  from {
+    opacity: 0%;
+    transform: translateY(140px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+
+video {
+  border-radius: 5px;
+  height: 95%;
+  width: 95%;
+  object-fit: cover;
+  transition-duration: 0.3s;
+  transition-duration: cubic-bezier(0, 1.13, 0.6, 1.25);
+  box-shadow: 18px 15px 12px rgba(42, 41, 41, 0.26);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75vh;
+  width: 50%;
+  gap: 10px;
+  transform: translateY(10px);
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100vw;
+}
+
+.title p {
+  font-weight: 600;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+}
+.textContainer {
+  overflow: hidden;
+  width: 90%;
+  transition-duration: 1s;
+  animation-name: expand;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+  from {
+    height: 10%;
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.small {
+  width: 70%;
+  transition-duration: 1s;
+}
+.textContainer p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .align {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .textContainer {
+    overflow: hidden;
+    width: 80%;
+    transition-duration: 1s;
+    animation-name: expand;
+    animation-duration: 0.5s;
+  }
+
+  .videoContainer {
+    display: flex;
+    align-items: center;
+    z-index: 40;
+    margin-right: 90px;
+    margin-bottom: 30px;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  video {
+    height: 100%;
+    width: 100%;
+  }
+
+  .title p {
+    color: rgb(23, 23, 23);
+    z-index: 40;
+  }
+}
