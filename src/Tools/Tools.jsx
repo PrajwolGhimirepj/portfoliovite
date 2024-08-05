@@ -1,14 +1,20 @@
 import React from "react";
 import "./Tools.css";
 import Page from "./Pages/Page";
+import Jump from "../Jump/Jump";
 
 const Tools = ({ hover }) => {
+  console.log(hover);
   return (
     <>
+      {/* <div className="jump">
+        <Jump />
+      </div> */}
       <div className="about font">
         <div className="imgcon">
           <img src="Bg2.svg" alt="" />
         </div>
+        <div className="rivecomp"></div>
         <div className="pages">
           <Page
             video={"React.mp4"}
@@ -61,6 +67,20 @@ const Tools = ({ hover }) => {
             hover={hover}
           />
         </div>
+        <div className="pages">
+          <Page
+            video={"can.mp4"}
+            title={"Blender"}
+            p1={
+              "Blender is a powerful open-source 3D creation suite used for modeling, animation, rendering, and more. It's widely popular in various industries, including game development, film production, and visual effects."
+            }
+            p2={
+              "With its extensive features and active community, Blender is a go-to tool for artists and developers worldwide."
+            }
+            hover={hover}
+          />
+        </div>
+        <div className="rivecomp"></div>
       </div>
     </>
   );

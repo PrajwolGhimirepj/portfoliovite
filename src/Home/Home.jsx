@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Rive from "../Rive/Rive";
+import RiveC from "../Rive/Rive";
 import Info from "../IntroCard/info";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
           <Info />
         </div>
         <div className="cat">
-          <Rive />
+          <RiveC />
         </div>
       </div>
     </>

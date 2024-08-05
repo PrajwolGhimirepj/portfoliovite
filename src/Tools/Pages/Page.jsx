@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Page.css";
+import Jump from "../../Jump/Jump";
 
 const Page = ({ video, title, p1, p2, hover }) => {
   const textRef1 = useRef(null);
@@ -36,7 +37,7 @@ const Page = ({ video, title, p1, p2, hover }) => {
     <div className="align">
       <div className="video">
         <div className="videoContainer">
-          <video autoPlay loop muted>
+          <video autoPlay loop muted style={{ backgroundColor: "transparent" }}>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

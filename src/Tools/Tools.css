@@ -22,3 +22,17 @@ body {
   height: 100vh;
   scroll-snap-align: center;
 }
+
+.jump {
+  z-index: 70;
+  position: absolute;
+  right: -300px;
+  bottom: 0px;
+  height: 400px;
+  width: 600px;
+}
+
+.rivecomp {
+  height: 20px;
+  width: 100vh;
+}

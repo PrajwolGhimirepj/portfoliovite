@@ -5,6 +5,7 @@ import Home from "./Home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Tools from "./Tools/Tools";
 import { useState, useEffect } from "react";
+import Jump from "./Jump/Jump";
 const App = () => {
   const [hoverState, sethoverState] = useState(null);
 

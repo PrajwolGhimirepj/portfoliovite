@@ -7,7 +7,7 @@ import {
 import React from "react";
 import { useState, useEffect } from "react";
 import { useRive } from "@rive-app/react-canvas";
-import "./Rive.css";
+import "./jump.css";
 
 const RiveC = () => {
   const [mousepo, setMousepo] = useState({ x: 0, y: 0 });
@@ -21,7 +21,7 @@ const RiveC = () => {
     animations: "Right-Ear",
     layout: new Layout({
       fit: Fit.FitHeight,
-      alignment: Alignment.BottomLeft,
+      alignment: Alignment.TopLeft,
     }),
   });
 
@@ -38,8 +38,8 @@ const RiveC = () => {
       const height = window.innerHeight;
       const width = window.innerWidth;
 
-      Xpo.value = (event.clientX / width) * 100;
-      Ypo.value = (event.clientY / height) * 100;
+      Xpo.value = (event.clientX / width) * 60;
+      Ypo.value = (event.clientY / height) * 60;
     };
 
     window.addEventListener("mousemove", handleMouse);
@@ -51,11 +51,8 @@ const RiveC = () => {
 
   return (
     <>
-      <div className="rivecomponent">
+      <div className="rivecomponent2">
         <RiveComponent />
-        <div className="bg">
-          <img src="background.svg" alt="" />
-        </div>
       </div>
     </>
   );
