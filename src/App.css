@@ -3,6 +3,9 @@
   margin: 0px;
 }
 
+body {
+  background-color: aliceblue;
+}
 .container {
   position: fixed;
   overflow: hidden;

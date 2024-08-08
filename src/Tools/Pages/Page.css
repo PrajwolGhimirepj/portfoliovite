@@ -11,7 +11,8 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: end;
+  justify-content: start;
+  flex-direction: row;
   overflow: hidden;
 }
 
@@ -31,9 +32,10 @@ body {
   z-index: 200;
   margin-left: 40px;
   margin-right: 20px;
+  margin-bottom: 40px;
   animation-name: slideup;
   animation-duration: 1s;
-  transform: translateY(140px);
+
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.08, 0.74, 0.32, 0.95);
   transition-duration: 1s;
@@ -66,6 +68,7 @@ video {
 }
 
 .description {
+  z-index: 30;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -124,6 +127,7 @@ video {
 .textContainer p {
   font-size: 1rem;
   font-weight: 500;
+  color: rgb(0, 0, 0);
 }
 
 h6 {
@@ -136,6 +140,7 @@ h6 {
     height: 100vh;
     width: 100vw;
     display: flex;
+    justify-content: start;
     flex-direction: column;
     overflow: hidden;
   }
@@ -145,6 +150,7 @@ h6 {
     flex-direction: column;
     justify-content: start;
     width: 100%;
+    height: 100%;
     margin: 20px;
     z-index: 30;
   }
@@ -171,6 +177,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: end;
+    z-index: 30;
   }
   video {
     height: 100%;
@@ -178,7 +185,7 @@ h6 {
   }
 
   .title p {
-    color: rgb(23, 23, 23);
-    z-index: 40;
+    z-index: 30;
+    color: rgb(29, 29, 29);
   }
 }

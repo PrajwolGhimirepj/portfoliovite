@@ -5,7 +5,7 @@ import Home from "./Home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Tools from "./Tools/Tools";
 import { useState, useEffect } from "react";
-import Jump from "./Jump/Jump";
+import Project from "./Projects/Projects";
 const App = () => {
   const [hoverState, sethoverState] = useState(null);
 
@@ -28,6 +28,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/tools" element={<Tools hover={hoverState} />} />
+              <Route path="/Projects" element={<Project />} />
             </Routes>
           </div>
         </div>

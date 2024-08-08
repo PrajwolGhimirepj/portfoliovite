@@ -1,22 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Card.css";
 
-const Card = (props) => {
+const CardE = (props) => {
   return (
     <>
       <div className="cardContainer">
-        <Link to={props.scr}>
+        <a href={props.external} target="_blank" rel="noopener noreferrer">
           <div className="icon">
             <img src={props.img} alt="" />
           </div>
-        </Link>
+        </a>
 
         <div className="text" style={props.style}>
-          <Link to={props.scr}>{props.context} </Link>
+          <a href={props.external} target="_blank" rel="noopener noreferrer">
+            {props.context}
+          </a>
         </div>
       </div>
     </>
   );
 };
-export default Card;
+export default CardE;

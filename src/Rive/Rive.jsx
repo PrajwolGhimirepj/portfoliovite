@@ -38,7 +38,7 @@ const RiveC = () => {
       const height = window.innerHeight;
       const width = window.innerWidth;
 
-      Xpo.value = (event.clientX / width) * 100;
+      Xpo.value = (event.clientX / width) * 200;
       Ypo.value = (event.clientY / height) * 100;
     };
 

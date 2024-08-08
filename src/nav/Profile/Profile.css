@@ -11,9 +11,16 @@
   top: 80px;
   left: 6px;
   position: absolute;
+  height: 30px;
   width: 30px;
-  border-radius: 100%;
+  transition-duration: 0.5s;
+  transform: translateY(40px);
   transition-timing-function: cubic-bezier(1, -0.16, 0.25, 1.03);
+}
+
+.profile:hover {
+  height: 35px;
+  width: 35px;
 }
 
 .profile img {
@@ -21,23 +28,21 @@
   height: 100%;
   width: 100%;
   transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0.57, 0.08, 0.15, 0.93);
 }
 
 .details {
   opacity: 0%;
   white-space: nowrap;
-  transform: translateY(120px);
+  transform: translateY(150px);
   transition-duration: 0.7s;
   margin-left: 40px;
-  font-size: 12px;
   color: rgb(255, 255, 255);
-  transition-timing-function: cubic-bezier(1, -0.16, 0.25, 1.03);
+  transition-timing-function: cubic-bezier(1, -0.16, 0.25, 1);
 }
 
 .font {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 
