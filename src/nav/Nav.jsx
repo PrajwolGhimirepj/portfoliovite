@@ -32,6 +32,7 @@ const Nav = () => {
           img={"insta.png"}
           external={"https://www.instagram.com/rahul567y5/"}
         />
+        <div className="profileContainer"></div>
       </div>
     </>
   );

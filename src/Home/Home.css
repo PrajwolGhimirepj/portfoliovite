@@ -8,7 +8,6 @@ body {
   overflow: hidden;
 }
 .introcard {
-  margin-left: 100px;
   display: flex;
   justify-content: center;
   align-items: center;

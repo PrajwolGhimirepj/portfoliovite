@@ -7,7 +7,7 @@ const Profile = () => {
         <div className="profile">
           <img src="p.jpg" alt="profile" />
         </div>
-        <div className="details font">
+        <div className="details ">
           <h1>Prajwol Ghimire</h1>
         </div>
       </div>

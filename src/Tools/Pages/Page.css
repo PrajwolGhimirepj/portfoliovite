@@ -91,10 +91,10 @@ video {
 
 .title {
   display: flex;
-  justify-content: center;
   align-items: center;
+
   height: 100px;
-  width: 100vw;
+  width: 100vh;
 }
 
 .title p {
@@ -128,10 +128,6 @@ video {
   font-size: 1rem;
   font-weight: 500;
   color: rgb(0, 0, 0);
-}
-
-h6 {
-  font-size: 3rem;
 }
 
 @media (max-width: 1000px) {
@@ -183,9 +179,27 @@ h6 {
     height: 100%;
     width: 100%;
   }
+}
 
+@media (max-width: 500px) {
+  .textContainer p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+  .title {
+    justify-content: center;
+  }
   .title p {
+    font-size: 2rem;
     z-index: 30;
     color: rgb(29, 29, 29);
+  }
+  .textContainer {
+    overflow: hidden;
+    width: 60%;
+    transition-duration: 1s;
+    animation-name: expand;
+    animation-duration: 0.5s;
   }
 }

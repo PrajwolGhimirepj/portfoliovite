@@ -53,3 +53,23 @@ span {
   font-weight: 600;
   mix-blend-mode: difference;
 }
+
+@media (max-width: 700px) {
+  p {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+  .flex {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    height: 8%;
+    border-radius: 6px;
+    width: 50%;
+    transition-duration: 0.6s;
+  }
+  .flex:hover {
+    height: 25%;
+    width: 80%;
+  }
+}
