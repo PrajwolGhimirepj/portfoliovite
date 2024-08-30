@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import RiveC from "../Rive/Rive";
 import Info from "../IntroCard/info";
 
 const Home = () => {
+  useEffect(() => {
+    const videos = [
+      "/Blender.mp4",
+      "/can.mp4",
+      "/Chat.mp4",
+      "/illustrator.mp4",
+      "/React.mp4",
+      "/Rive.mp4",
+    ];
+
+    videos.forEach((src) => {
+      const videoElement = document.createElement("video");
+      videoElement.src = src;
+      videoElement.preload = "auto"; // Preload each video
+    });
+  }, []);
+
   return (
     <>
       <div className="home">
@@ -17,4 +34,5 @@ const Home = () => {
     </>
   );
 };
+
 export default Home;

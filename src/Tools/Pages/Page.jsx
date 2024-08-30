@@ -38,11 +38,12 @@ const Page = ({ video, title, p1, p2, hover }) => {
       <div className="video">
         <div className="videoContainer">
           <video
+            rel="preload"
             autoPlay
             loop
             muted
             style={{ backgroundColor: "transparent" }}
-            preload="metadata"
+            preload="auto"
           >
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
