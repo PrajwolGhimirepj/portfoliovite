@@ -13,12 +13,18 @@ const Home = () => {
       "/React.mp4",
       "/Rive.mp4",
     ];
+    setTimeout(() => {
+      videos.forEach((src) => {
+        setTimeout(() => {
+          const videoElement = document.createElement("video");
+          videoElement.src = src;
+          videoElement.preload = "auto"; // Preload each video
+          console.log(src);
+        }, 500);
+      });
 
-    videos.forEach((src) => {
-      const videoElement = document.createElement("video");
-      videoElement.src = src;
-      videoElement.preload = "auto"; // Preload each video
-    });
+      console.log("initial load ");
+    }, 1000);
   }, []);
 
   return (

@@ -11,7 +11,6 @@ import "./Rive.css";
 
 const RiveC = () => {
   const [mousepo, setMousepo] = useState({ x: 0, y: 0 });
-  console.log(mousepo);
 
   const stateMachines = "State Machine 1";
   const { rive, RiveComponent } = useRive({
