@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <>
       <div className="sidebar font">
-        <Profile />
+        {/* <Profile /> */}
         <Card
           scr={"/"}
           context={"Home"}
@@ -32,7 +32,6 @@ const Nav = () => {
           img={"insta.png"}
           external={"https://www.instagram.com/rahul567y5/"}
         />
-        <div className="profileContainer"></div>
       </div>
     </>
   );

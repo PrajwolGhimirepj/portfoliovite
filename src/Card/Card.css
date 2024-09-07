@@ -23,11 +23,11 @@ a {
   width: 100%;
   object-fit: cover;
   scale: 98%;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .icon img:hover {
-  scale: 110%;
+  scale: 103%;
 }
 
 .text {

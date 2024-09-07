@@ -20,7 +20,7 @@ const Home = () => {
           videoElement.src = src;
           videoElement.preload = "auto"; // Preload each video
           console.log(src);
-        }, 500);
+        }, 700);
       });
 
       console.log("initial load ");

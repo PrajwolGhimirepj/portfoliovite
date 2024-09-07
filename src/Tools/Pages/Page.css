@@ -35,7 +35,6 @@ body {
   margin-bottom: 40px;
   animation-name: slideup;
   animation-duration: 1s;
-
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.08, 0.74, 0.32, 0.95);
   transition-duration: 1s;
@@ -61,7 +60,7 @@ video {
   border-radius: 5px;
   height: 95%;
   width: 95%;
-  object-fit: cover;
+  object-fit: contain;
   transition-duration: 0.3s;
   transition-duration: cubic-bezier(0, 1.13, 0.6, 1.25);
   box-shadow: 18px 15px 12px rgba(42, 41, 41, 0.26);
@@ -71,13 +70,15 @@ video {
   z-index: 30;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  height: 50%;
+  justify-content: center;
+  height: 100%;
   width: 50%;
   gap: 10px;
   transform: translateY(10px);
   animation-name: fade;
   animation-duration: 1s;
+  padding-bottom: 200px;
+  /* background-color: aqua; */
 }
 
 @keyframes fade {
@@ -92,7 +93,6 @@ video {
 .title {
   display: flex;
   align-items: center;
-
   height: 100px;
   width: 100vh;
 }
@@ -193,7 +193,7 @@ video {
   .title p {
     font-size: 2rem;
     z-index: 30;
-    color: rgb(29, 29, 29);
+    color: rgb(0, 0, 0);
   }
   .textContainer {
     overflow: hidden;

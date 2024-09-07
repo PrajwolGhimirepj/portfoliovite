@@ -20,7 +20,7 @@ const Tools = ({ hover }) => {
             video={"React.mp4"}
             title={"React"}
             p1={
-              "React is an open-source JavaScript library used for building user interfaces, particularly single-page applications where a seamless user experience is critical."
+              "React is an open-source JavaScript library used for building user interfaces, particularly single-page applications where a seamless user experience ."
             }
             p2={
               "React allows developers to create reusable UI components that manage their own state, leading to more efficient and manageable code."
@@ -33,7 +33,7 @@ const Tools = ({ hover }) => {
             video={"Rive.mp4"}
             title={"Rive"}
             p1={
-              "Rive is an animation software with very good web runtimes. It can be used to create interactive animations on web pages that react to user inputs."
+              "Rive is an animation software with very good web runtimes. It can be used to create interactive animations on web pages that react to user inputs. "
             }
             p2={
               "The Cat on the Home Page is a Rive component that follows the cursor. Below is another example. Here, on click, the cat jumps."
@@ -59,7 +59,7 @@ const Tools = ({ hover }) => {
             video={"Chat.mp4"}
             title={"ChatGPT"}
             p1={
-              "ChatGPT is a language model developed by OpenAI, widely used for various natural language processing tasks. It can generate human-like text based on the input it receives."
+              "ChatGPT is a language model developed by OpenAI, widely used for various natural language processing tasks. ."
             }
             p2={
               "ChatGPT is used in applications ranging from chatbots to content creation, providing versatile solutions for text-based interactions."
@@ -72,7 +72,7 @@ const Tools = ({ hover }) => {
             video={"can.mp4"}
             title={"Blender"}
             p1={
-              "Blender is a powerful open-source 3D creation suite used for modeling, animation, rendering, and more. It's widely popular in various industries, including game development, film production, and visual effects."
+              "Blender is a powerful open-source 3D creation suite used for modeling, animation, rendering, and more. It's widely popular in various industries, film production, and visual effects."
             }
             p2={
               "With its extensive features and active community, Blender is a go-to tool for artists and developers worldwide."
