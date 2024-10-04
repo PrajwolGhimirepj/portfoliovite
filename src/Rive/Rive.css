@@ -3,19 +3,20 @@
   display: flex;
   bottom: 0px;
   height: 100vh;
-  width: 100vw;
+  width: 100vh;
   position: relative;
 }
 
-.bg {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  z-index: -9999;
+@media (max-width: 1250px) {
+  .rivecomponent {
+    height: 70vh;
+    width: 100vh;
+  }
 }
 
-.bg img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+@media (max-width: 1050px) {
+  .rivecomponent {
+    height: 60vh;
+    width: 100vh;
+  }
 }

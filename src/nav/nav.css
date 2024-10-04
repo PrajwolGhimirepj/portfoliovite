@@ -9,9 +9,10 @@
   width: 60px;
   padding: 8px;
   gap: 10px;
-  background: rgb(0, 0, 0);
+  font-weight: 900;
+  background-color: black;
   transition-duration: 0.7s;
-  border-right: 1.5px solid rgb(89, 88, 88);
+  border-right: 2px solid rgb(89, 88, 88);
   transition-timing-function: cubic-bezier(0.56, 0.19, 0.25, 0.88);
 }
 
@@ -28,12 +29,6 @@
   transform: translateY(100px);
 }
 
-.sidebar:hover .profile {
-  width: 50px;
-  height: 50px;
-  transform: translateY(-30px);
-}
-
 @media (max-width: 700px) {
   .profile {
     display: none;
@@ -41,11 +36,7 @@
   .sidebar:hover {
     width: 40px;
   }
-  .sidebar:hover .profile {
-    width: 30px;
-    height: 30px;
-    transform: translateY(40px);
-  }
+
   .sidebar:hover .details {
     opacity: 0%;
   }
@@ -56,7 +47,7 @@
     align-items: center;
     text-align: center;
     transform: translateY(0px);
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
     border: 1px solid rgba(145, 43, 43, 0);
   }
 }

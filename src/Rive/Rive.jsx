@@ -8,16 +8,15 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useRive } from "@rive-app/react-canvas";
 import "./Rive.css";
-
-const RiveC = () => {
+const Cat = () => {
   const [mousepo, setMousepo] = useState({ x: 0, y: 0 });
 
   const stateMachines = "State Machine 1";
   const { rive, RiveComponent } = useRive({
-    src: "wh.riv",
+    src: "Cat.riv",
     stateMachines: stateMachines,
     autoplay: true,
-    animations: "Right-Ear",
+    // animations: "Right-Ear",
     layout: new Layout({
       fit: Fit.FitHeight,
       alignment: Alignment.BottomLeft,
@@ -52,12 +51,9 @@ const RiveC = () => {
     <>
       <div className="rivecomponent">
         <RiveComponent />
-        <div className="bg">
-          <img src="background.svg" alt="" />
-        </div>
       </div>
     </>
   );
 };
 
-export default RiveC;
+export default Cat;

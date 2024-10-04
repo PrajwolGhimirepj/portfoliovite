@@ -16,7 +16,7 @@ const Info = () => {
       textRef2.current.innerHTML = "More...";
     } else if (state === "HoverOn2") {
       textRef2.current.innerHTML =
-        "Here, you'll find a selection of my work along with insights into my creative process, the tools I use, and the technologies I'm exploring";
+        "Here, you'll find a selection of my work along with insights into my creative process, the tools I use, and the technologies I'm exploring.";
     }
   };
 

@@ -1,0 +1,35 @@
+.projects-p {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 5%;
+}
+.image-bg {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  right: 0px;
+  z-index: -9999;
+}
+.image-bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+.project-nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 10%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: black;
+  bottom: 5%;
+}

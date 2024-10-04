@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 import RiveC from "../Rive/Rive";
-import Info from "../IntroCard/info";
+import Info from "./Introduction/info";
 
 const Home = () => {
   useEffect(() => {
@@ -30,6 +30,7 @@ const Home = () => {
   return (
     <>
       <div className="home">
+        <img src="BackGround Images\HomeBackground.svg" alt="" />
         <div className="introcard">
           <Info />
         </div>

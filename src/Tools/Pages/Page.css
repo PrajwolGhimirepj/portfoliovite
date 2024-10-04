@@ -1,88 +1,85 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0px;
-}
-
-.align {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
+.page-c {
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: start;
-  flex-direction: row;
-  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
+.left {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
 .video {
   width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
 }
-
-.videoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 200;
-  margin-left: 40px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-  animation-name: slideup;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.08, 0.74, 0.32, 0.95);
-  transition-duration: 1s;
-}
-
-.align:hover video {
+video {
   height: 100%;
   width: 100%;
-  /* box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.26); */
-}
-@keyframes slideup {
-  from {
-    opacity: 0%;
-    transform: translateY(140px);
-  }
-  to {
-    opacity: 100%;
-    transform: translateY(0px);
-  }
-}
-
-video {
   border-radius: 5px;
-  height: 95%;
-  width: 95%;
   object-fit: contain;
-  transition-duration: 0.3s;
-  transition-duration: cubic-bezier(0, 1.13, 0.6, 1.25);
-  box-shadow: 18px 15px 12px rgba(42, 41, 41, 0.26);
+  animation-name: fade-v;
+  animation-duration: 1s;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.537);
+}
+.right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .description {
-  z-index: 30;
+  height: 55%;
+  width: 100%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 50%;
-  gap: 10px;
-  transform: translateY(10px);
-  animation-name: fade;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+.tital {
+  display: flex;
+  font-size: 60px;
+  font-weight: 600;
+  transform: translateY(15px);
+  animation-name: fade-v;
   animation-duration: 1s;
-  padding-bottom: 200px;
-  /* background-color: aqua; */
+}
+.text-p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  overflow: hidden;
+  animation-name: open;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  color: rgb(35, 33, 33);
 }
 
-@keyframes fade {
+@keyframes open {
   from {
+    opacity: 0%;
+    width: 0%;
+  }
+  to {
+    opacity: 100%;
+    width: 100%;
+  }
+}
+
+@keyframes fade-v {
+  from {
+    transform: translateY(30px);
     opacity: 0%;
   }
   to {
@@ -90,116 +87,73 @@ video {
   }
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  height: 100px;
-  width: 100vh;
-}
-
-.title p {
-  font-weight: 600;
-  font-size: 60px;
-  color: rgb(0, 0, 0);
-}
-.textContainer {
-  overflow: hidden;
-  width: 90%;
-  transition-duration: 1s;
-  animation-name: expand;
-  animation-duration: 1s;
-}
-
-@keyframes expand {
-  from {
-    height: 10%;
-    width: 0%;
-  }
-  to {
-    width: 80%;
-  }
-}
-
-.small {
-  width: 70%;
-  transition-duration: 1s;
-}
-.textContainer p {
-  font-size: 1rem;
-  font-weight: 500;
-  color: rgb(0, 0, 0);
-}
-
-@media (max-width: 1000px) {
-  .align {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
-  .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 100%;
+@media (max-width: 700px) {
+  .page-c {
     height: 100%;
-    padding: 5px;
-    z-index: 30;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .textContainer {
-    overflow: hidden;
-    width: 90%;
-    transition-duration: 1s;
-    animation-name: expand;
-    animation-duration: 0.5s;
-  }
-
-  .videoContainer {
+  .left {
+    height: 30%;
+    width: 100%;
     display: flex;
     align-items: center;
-    z-index: 40;
-    margin-right: 90px;
-    margin-bottom: 30px;
+    justify-content: center;
+    padding: 30px;
   }
-
   .video {
     width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: end;
-    z-index: 30;
   }
   video {
     height: 100%;
     width: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+    animation-name: fade-v;
+    animation-duration: 1s;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.537);
   }
-}
-
-@media (max-width: 500px) {
-  .textContainer p {
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-  }
-  .title {
+  .right {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
-  .title p {
-    font-size: 2rem;
-    z-index: 30;
-    color: rgb(0, 0, 0);
+
+  .description {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
   }
-  .textContainer {
+  .tital {
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    transform: translateY(15px);
+    animation-name: fade-v;
+    animation-duration: 1s;
+  }
+  .text-p {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
     overflow: hidden;
-    width: 80%;
-    transition-duration: 1s;
-    animation-name: expand;
-    animation-duration: 0.5s;
+    animation-name: open;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    color: rgb(35, 33, 33);
   }
 }
