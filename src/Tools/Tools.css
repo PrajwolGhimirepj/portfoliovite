@@ -1,6 +1,7 @@
 .container-tools {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  overflow: hidden;
   overflow-y: scroll;
   scroll-snap-type: Y mandatory;
   scrollbar-width: 0px;
@@ -23,10 +24,9 @@
 
 .bg {
   position: fixed;
-  height: 50%;
+  height: 30%;
   width: 30%;
   object-fit: fill;
   top: 0px;
-  left: 0px;
-  z-index: -99;
+  z-index: 99999999;
 }

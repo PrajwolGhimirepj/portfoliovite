@@ -3,20 +3,33 @@ import "./Page.css";
 
 const Page = (props) => {
   return (
-    <div className="page-c">
-      <div className="left">
-        <div className="video">
-          <video src={props.scr} autoPlay loop muted preload="auto"></video>
+    <>
+      <div className="page-container">
+        <div className="pagetop">
+          <div className="pagetopleft font">
+            <div className="whitespace"></div>
+            <div className="tital">{props.tital}</div>
+            <div className="sentence1">{props.Sentence1}</div>
+            <div className="sentence1">{props.Sentence2}</div>
+          </div>
+          <div className="pagetopright">
+            <div className="video">
+              <video autoPlay loop muted src={props.scr}></video>
+            </div>
+          </div>
+        </div>
+        <div className="tital-p font"> Projects</div>
+        <div className="pagebottom">
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div>
+          <div className="box"></div> <div className="box"></div>
         </div>
       </div>
-      <div className="right">
-        <div className="description">
-          <div className="tital font">{props.tital}</div>
-          <div className="text-p font">{props.Sentence1}</div>
-          <div className="text-p font">{props.Sentence2}</div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

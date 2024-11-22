@@ -10,19 +10,38 @@ body {
   background-color: aliceblue;
 }
 .container {
-  position: fixed;
   overflow: hidden;
   display: flex;
   height: 100vh;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
+  width: 100vw;
 }
 
-.nave {
+.topnav {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: absolute;
   z-index: 9999;
+  gap: 30px;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.topnav h4 {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.nav {
+  height: 100%;
 }
 
 .content {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

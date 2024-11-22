@@ -4,22 +4,25 @@ import Nav from "./nav/Nav";
 import Home from "./Home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Tools from "./Tools/Tools";
-import { useState, useEffect } from "react";
+import Test from "./Test/Test";
 
-import Projects from "./Projects/Projects";
 const App = () => {
   return (
     <>
       <Router>
         <div className="container">
-          <div className="nave ">
+          <div className="topnav font">
+            <h4>Login</h4>
+            <h4>Blog</h4>
+          </div>
+          <div className="nav ">
             <Nav />
           </div>
           <div className="content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/tools" element={<Tools />} />
-              <Route path="/projects/*" element={<Projects />} />
+              <Route path="/test" element={<Test />} />
             </Routes>
           </div>
         </div>

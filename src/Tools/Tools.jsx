@@ -1,15 +1,14 @@
 import React from "react";
 import "./Tools.css";
 import Page from "./Pages/Page";
+import Batcat from "../Rive/Batcat/Batcat";
 
 const Tools = () => {
   return (
     <div className="container-tools">
       <div className="bounce"></div>
-      <div className="bg">
-        {" "}
-        <img src="ToolsBg.svg" alt="" />
-      </div>
+      <div className="batcat"></div>
+      <div className="bg">{/* <Batcat /> */}</div>
 
       <div className="page">
         <Page

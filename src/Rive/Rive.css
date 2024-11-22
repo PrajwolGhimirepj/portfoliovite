@@ -9,14 +9,8 @@
 
 @media (max-width: 1250px) {
   .rivecomponent {
-    height: 70vh;
-    width: 100vh;
-  }
-}
-
-@media (max-width: 1050px) {
-  .rivecomponent {
     height: 60vh;
     width: 100vh;
+    transform: translateX(40px);
   }
 }

@@ -1,0 +1,15 @@
+.test {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.batcat {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
